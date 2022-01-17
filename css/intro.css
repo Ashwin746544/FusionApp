@@ -6,10 +6,10 @@ p {
 .intro {
   width: 85%;
   margin-left: 15%;
-  background-image: url(../assets/intro-mobile.png);
-  background-repeat: no-repeat;
-  background-size: 38% 66%;
-  background-position: 70% 40px;
+  background-image: url(../assets/hero-area.svg), url(../assets/intro-mobile.png);
+  background-repeat: no-repeat,no-repeat;
+  background-size: cover,38% 66%;
+  background-position: left 71%, 70% 10%;
 }
 
 .intro-content {
