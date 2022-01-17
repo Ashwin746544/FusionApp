@@ -1,0 +1,42 @@
+p {
+  color: #80808091;
+  font-size: 15px;
+}
+
+.intro {
+  width: 85%;
+  margin-left: 15%;
+  background-image: url(../assets/intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 38% 66%;
+  background-position: 70% 40px;
+}
+
+.intro-content {
+  height: 500px;
+  margin-top: 130px;
+  padding: 20px 10px;
+  width: 40%;
+}
+
+.intro-title {
+  font-size: 50px;
+}
+
+#dBtn {
+  background-color: red;
+  padding: 11px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 12px;
+  color: white;
+}
+
+#lBtn {
+  background-color: white;
+  padding: 11px;
+  border: 2px solid #df5d88;
+  border-radius: 20px;
+  color: #df5d88;
+}
+/*# sourceMappingURL=intro.css.map */
