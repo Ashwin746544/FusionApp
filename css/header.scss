@@ -1,0 +1,36 @@
+*{
+   box-sizing: border-box;
+}
+nav{
+  width: 70%;
+  margin: auto;
+}
+nav{
+ img{
+   width: 150px;
+   padding: 10px;
+ }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+    float: right;
+    margin: 0px 187px;
+    padding-top: 5px;
+  }
+  li{
+    float: left;
+    padding: 10px 18px;
+    font-size: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: gray;
+  }
+  a:active{
+    color: rgb(243, 116, 137);
+  }
+  a:hover{
+    color: blue;
+  }
+}
