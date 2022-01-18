@@ -1,12 +1,10 @@
+@import "shared";
 .services{
   width: 70%;
   margin: 30px auto;
 }
 .service-title{
-  text-align: center;
-}
-.service-title span{
-  border-bottom: 2px solid #ff6883;
+  @include section-title;
 }
 .service-content{
   display: flex;

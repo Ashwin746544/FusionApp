@@ -2,13 +2,19 @@
   color: #80808091;
   font-size: 15px;
 }
-@mixin section-title {
-  color: gray;
-  font-size: 15px;
-}
+// @mixin  {
+//   color: gray;
+//   font-size: 15px;
+// }
 @mixin button($color,$back-color) {
   color: $color;
   background-color: $back-color;
   border-radius: 20px;
   padding: 11px;
+}
+@mixin section-title {
+    text-align: center;
+    span{
+    border-bottom: 2px solid #ff6883;
+  }
 }

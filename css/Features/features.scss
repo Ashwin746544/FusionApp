@@ -1,13 +1,11 @@
+@import "shared";
 .features{
   width: 70%;
   margin: 65px auto;
   background: url(../../assets/features.png) left 50% top 60%/ 400px 400px no-repeat;
 }
-.features-title h1{
-  text-align: center;
-}
-.features-title span{
-  border-bottom: 2px solid #ff6883;
+.features-title{
+  @include section-title;
 }
 .features-content{
   display: flex;
