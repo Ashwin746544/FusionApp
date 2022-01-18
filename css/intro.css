@@ -24,19 +24,20 @@ p {
 }
 
 #dBtn {
+  color: white;
   background-color: red;
+  border-radius: 20px;
   padding: 11px;
   border: none;
-  border-radius: 20px;
   margin-right: 12px;
-  color: white;
 }
 
 #lBtn {
-  background-color: white;
-  padding: 11px;
-  border: 2px solid #df5d88;
-  border-radius: 20px;
   color: #df5d88;
+  background-color: white;
+  border-radius: 20px;
+  padding: 11px;
+  background-color: white;
+  border: 2px solid #df5d88;
 }
 /*# sourceMappingURL=intro.css.map */

@@ -1,0 +1,25 @@
+@import "shared";
+.statistics{
+  height: 500px;
+    position: relative;
+    background-image: url(../assets/img-1.png);
+    background-repeat: no-repeat;
+    background-size: 33% 70%;
+    background-color: whitesmoke;
+    background-position: 70% 40%;
+}
+p{
+  @include normal-text;
+}
+.stats-content{
+  width: 30%;
+  padding: 10px 20px;
+  margin: 0px 15%;
+  position: absolute;
+  top: 90px
+}
+.rBtn{
+  @include button(white,red);
+  border: none;
+  margin-top: 8px;
+}

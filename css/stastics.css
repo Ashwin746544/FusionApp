@@ -1,0 +1,32 @@
+.statistics {
+  height: 500px;
+  position: relative;
+  background-image: url(../assets/img-1.png);
+  background-repeat: no-repeat;
+  background-size: 33% 70%;
+  background-color: whitesmoke;
+  background-position: 70% 40%;
+}
+
+p {
+  color: #80808091;
+  font-size: 15px;
+}
+
+.stats-content {
+  width: 30%;
+  padding: 10px 20px;
+  margin: 0px 15%;
+  position: absolute;
+  top: 90px;
+}
+
+.rBtn {
+  color: white;
+  background-color: red;
+  border-radius: 20px;
+  padding: 11px;
+  border: none;
+  margin-top: 8px;
+}
+/*# sourceMappingURL=stastics.css.map */

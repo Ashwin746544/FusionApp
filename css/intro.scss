@@ -20,17 +20,12 @@ p{
   font-size: 50px;
 }
 #dBtn{
-  background-color: red;
-  padding: 11px;
+  @include button(white,red);
   border: none;
-  border-radius: 20px;
   margin-right: 12px;
-  color: white;
 }
 #lBtn{
+  @include button(#df5d88,white);
   background-color: white;
-  padding: 11px;
   border: 2px solid #df5d88;
-  border-radius: 20px;
-  color: #df5d88;
 }
