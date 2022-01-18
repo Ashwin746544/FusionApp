@@ -1,0 +1,62 @@
+.features {
+  width: 70%;
+  margin: 65px auto;
+  background: url(../../assets/features.png) left 50% top 60%/400px 400px no-repeat;
+}
+
+.features-title h1 {
+  text-align: center;
+}
+
+.features-title span {
+  border-bottom: 2px solid #ff6883;
+}
+
+.features-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.f-item {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  padding: 10px;
+  margin: 10px 30px;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.f-item div {
+  width: 80%;
+  padding: 5px;
+  display: inline-block;
+}
+
+.f-item .f-img {
+  vertical-align: top;
+  margin-top: 25px;
+  width: 10%;
+}
+
+.f-img:nth-child(even) {
+  margin-left: 5px;
+}
+
+.f-img:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.f-img img {
+  width: 30px;
+}
+/*# sourceMappingURL=features.css.map */
