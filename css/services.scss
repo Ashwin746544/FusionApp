@@ -1,0 +1,28 @@
+.services{
+  width: 70%;
+  margin: 30px auto;
+}
+.service-title{
+  text-align: center;
+}
+.service-title span{
+  border-bottom: 2px solid #ff6883;
+}
+.service-content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.service-content .s-item{
+  text-align: center;
+  flex: 30%;
+  margin: 20px 20px;
+  -webkit-box-shadow: 5px 5px 4px grey;
+  box-shadow: 1px 2px 4px grey;
+  padding: 20px 10px;
+}
+.s-item img{
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 50%;
+}
