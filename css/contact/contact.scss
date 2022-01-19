@@ -1,0 +1,52 @@
+@import "../shared";
+.contact-section{
+  background-color: whitesmoke;
+  padding: 10px 0px;
+}
+.contact{
+  width: 70%;
+  margin: 35px auto;
+}
+.contact-content{
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form{
+  flex: 0 1 60%;
+  padding: 10px;
+}
+.contact-map{
+  flex: 0 1 40%;
+  padding: 10px;
+}
+.contact-title{
+  @include section-title;
+}
+.contact-form div{
+  margin: 15px 0px;
+}
+.contact input{
+  border-radius: 5px;
+  border: none;
+}
+.email-name{
+  display: flex;
+  justify-content: space-between;
+}
+.email-name input{
+  flex:0 1 47%;
+  padding: 10px;
+}
+.subject input,.message textarea{
+  width: 100%;
+  padding: 10px;
+}
+.message textarea{
+  height: 150px;
+  border-radius: 5px;
+  border: none;
+}
+input[type=submit]{
+  @include button(white,$primaryColor);
+  border: none;
+}

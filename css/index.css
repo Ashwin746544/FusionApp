@@ -495,4 +495,89 @@ p {
 #dot-4 {
   background-color: transparent;
 }
+
+.contact-section {
+  background-color: whitesmoke;
+  padding: 10px 0px;
+}
+
+.contact {
+  width: 70%;
+  margin: 35px auto;
+}
+
+.contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+  padding: 10px;
+}
+
+.contact-map {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  padding: 10px;
+}
+
+.contact-title {
+  text-align: center;
+}
+
+.contact-title span {
+  border-bottom: 2px solid #ff6883;
+}
+
+.contact-form div {
+  margin: 15px 0px;
+}
+
+.contact input {
+  border-radius: 5px;
+  border: none;
+}
+
+.email-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.email-name input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 47%;
+          flex: 0 1 47%;
+  padding: 10px;
+}
+
+.subject input, .message textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+.message textarea {
+  height: 150px;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type=submit] {
+  color: white;
+  background-color: #f7073f;
+  border-radius: 20px;
+  padding: 11px;
+  border: none;
+}
 /*# sourceMappingURL=index.css.map */
