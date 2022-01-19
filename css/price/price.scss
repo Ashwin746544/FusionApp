@@ -1,0 +1,40 @@
+@import "../shared";
+.price-section{
+  width: 70%;
+  margin: auto;
+}
+.price-title{
+  @include section-title;
+}
+.price-content{
+  display: flex;
+  justify-content: space-between;
+}
+.plan{
+
+  flex:0 1 30%;
+  box-shadow: 2px 2px 4px 3px rgba(0, 0 ,0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0px;
+}
+#plan-2{
+  box-shadow: 2px 2px 10px 7px rgba(0, 0 ,0, 0.2); 
+}
+.price span{
+  font-size: 1.3em;
+  font-weight: bold;
+  color: $primaryColor;
+}
+.buyBtn{
+  @include button(white,$primaryColor);
+  border: none;
+}
+
+#plan-1 .icon-container,#plan-3 .icon-container{
+  @include circleIcon(rgb(224, 224, 224));
+}
+#plan-2 .icon-container{
+  @include circleIcon($primaryColor);
+}
