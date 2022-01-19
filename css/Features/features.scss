@@ -1,4 +1,4 @@
-@import "shared";
+@import "../shared";
 .features{
   width: 70%;
   margin: 65px auto;
@@ -18,7 +18,7 @@
     flex: 30%;
     padding: 10px;
     margin: 10px 30px;
-    box-shadow: 2px 1px 6px 0px rgb(0 0 0 / 20%);;
+    box-shadow: 2px 1px 6px 0px rgba(0, 0, 0,20%);;
     flex-grow: 0;
 }
 .f-item div{

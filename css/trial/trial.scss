@@ -1,0 +1,28 @@
+@import "../shared";
+.trial-section{
+  padding: 10px 0px;
+}
+.trial{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.trial .disc,.trial .register{
+  flex: 0 1 40%;
+}
+.disc h1{
+  font-size: 25px;
+}
+.register{
+  position: relative;
+}
+.register button{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  border: none;
+  @include button(white,$primaryColor);
+}
