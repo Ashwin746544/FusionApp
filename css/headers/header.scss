@@ -1,3 +1,4 @@
+@import "../shared";
 *{
    box-sizing: border-box;
 }
@@ -27,10 +28,10 @@ nav{
     text-decoration: none;
     color: gray;
   }
-  a:active{
-    color: rgb(243, 116, 137);
-  }
   a:hover{
     color: blue;
+  } 
+  a:active{
+    color: $primaryColor;
   }
 }

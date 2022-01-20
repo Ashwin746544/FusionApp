@@ -19,7 +19,7 @@ p{
   top: 90px
 }
 .rBtn{
-  @include button(white,red);
+  @include button(white,$primaryColor);
   border: none;
   margin-top: 8px;
 }

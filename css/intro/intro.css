@@ -25,7 +25,7 @@ p {
 
 #dBtn {
   color: white;
-  background-color: red;
+  background-color: #f7073f;
   border-radius: 20px;
   padding: 11px;
   border: none;
@@ -33,7 +33,7 @@ p {
 }
 
 #lBtn {
-  color: #df5d88;
+  color: #f7073f;
   background-color: white;
   border-radius: 20px;
   padding: 11px;

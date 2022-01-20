@@ -32,11 +32,11 @@ nav a {
   color: gray;
 }
 
-nav a:active {
-  color: #f37489;
-}
-
 nav a:hover {
   color: blue;
+}
+
+nav a:active {
+  color: #f7073f;
 }
 /*# sourceMappingURL=header.css.map */

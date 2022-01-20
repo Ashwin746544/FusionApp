@@ -1,0 +1,88 @@
+footer {
+  position: relative;
+  padding: 15px 0px;
+}
+
+.f-content {
+  width: 70%;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.f-company {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.f-company span {
+  color: #f7073f;
+}
+
+.fusion, .f-contact, .products, .resources {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 15%;
+          flex: 1 0 15%;
+}
+
+.s-icons img {
+  width: 15px;
+  margin-right: 30px;
+}
+
+.s-icons {
+  margin: 7px 0px;
+}
+
+.f-contact-info img {
+  width: 20px;
+  padding-top: 15px;
+}
+
+.f-contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.f-contact-info div:nth-child(2) {
+  padding: 0px 5px;
+}
+
+.f-content > div {
+  padding: 10px;
+}
+
+.f-content > div h2 {
+  margin-top: 2px;
+}
+
+.arrow {
+  border-radius: 50%;
+  display: inline;
+  -webkit-box-shadow: 2px 0px 6px 2px #0000000d;
+          box-shadow: 2px 0px 6px 2px #0000000d;
+  right: 15px;
+  bottom: 15px;
+  position: absolute;
+}
+
+.arrow button {
+  border-radius: 50%;
+  padding: 3px;
+  border: none;
+  background-color: #f7073f;
+}
+
+.arrow button img {
+  width: 30px;
+  height: 25px;
+}
+/*# sourceMappingURL=footer.css.map */

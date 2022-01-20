@@ -17,6 +17,10 @@
   border-bottom: 2px solid #ff6883;
 }
 
+.team-title h1 {
+  font-size: 2rem;
+}
+
 .team-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,8 +36,8 @@
   -webkit-box-flex: 48%;
       -ms-flex: 48%;
           flex: 48%;
-  -webkit-box-shadow: 2px 1px 6px 2px black;
-          box-shadow: 2px 1px 6px 2px black;
+  -webkit-box-shadow: 2px 0px 6px 2px #0000000d;
+          box-shadow: 2px 0px 6px 2px #0000000d;
   margin-bottom: 30px;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;

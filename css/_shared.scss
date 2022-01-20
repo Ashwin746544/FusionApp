@@ -1,4 +1,5 @@
 $primaryColor: #f7073f;
+$primaryShadow: 2px 0px 6px 2px #0000000d;
 @mixin normal-text {
   color: #80808091;
   font-size: 15px;
@@ -17,6 +18,9 @@ $primaryColor: #f7073f;
     text-align: center;
     span{
     border-bottom: 2px solid #ff6883;
+  }
+  h1{
+    font-size: 2rem;
   }
 }
 @mixin circleIcon($bColor) {

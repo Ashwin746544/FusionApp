@@ -39,6 +39,10 @@
   border-bottom: 2px solid #ff6883;
 }
 
+.contact-title h1 {
+  font-size: 2rem;
+}
+
 .contact-form div {
   margin: 15px 0px;
 }
