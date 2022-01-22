@@ -1,66 +1,80 @@
 .features {
-  width: 70%;
+  width: 1200px;
   margin: 65px auto;
-  background: url(../../assets/features.png) left 50% top 60%/400px 400px no-repeat;
 }
 
-.features-title {
+.features .features-title {
   text-align: center;
 }
 
-.features-title span {
+.features .features-title span {
   border-bottom: 2px solid #ff6883;
 }
 
-.features-title h1 {
+.features .features-title h1 {
   font-size: 2rem;
 }
 
-.features-content {
+.features .features-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.f-item {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
-  padding: 10px;
-  margin: 10px 30px;
+.features .features-content div.left,
+.features .features-content div.middle,
+.features .features-content div.right {
+  width: 33%;
+}
+
+.features .features-content div.left,
+.features .features-content div.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features .features-content div.middle img {
+  width: 100%;
+}
+
+.features .features-content div.left .f-info {
+  text-align: right;
+}
+
+.features .features-content .f-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  margin: 15px 10px;
   -webkit-box-shadow: 2px 0px 6px 2px #0000000d;
           box-shadow: 2px 0px 6px 2px #0000000d;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
 }
 
-.f-item div {
-  width: 80%;
+.features .features-content .f-item div.f-info {
+  width: 75%;
   padding: 5px;
-  display: inline-block;
 }
 
-.f-item .f-img {
-  vertical-align: top;
-  margin-top: 25px;
-  width: 10%;
+.features .features-content .f-item .f-img {
+  width: 25%;
+  text-align: center;
 }
 
-.f-img:nth-child(even) {
-  margin-left: 5px;
-}
-
-.f-img:nth-child(odd) {
-  margin-right: 10px;
-}
-
-.f-img img {
-  width: 30px;
+.features .features-content .f-item .f-img img {
+  margin-top: 40px;
 }
 /*# sourceMappingURL=features.css.map */

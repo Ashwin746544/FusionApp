@@ -1,31 +1,43 @@
 @import "../shared";
-p{
+p {
   @include normal-text;
 }
-.intro{
-  width: 85%;
-  margin-left: 15%;
-  background-image: url(../assets/hero-area.svg), url(../assets/intro-mobile.png);
-  background-repeat: no-repeat,no-repeat;
-  background-size: cover,38% 66%;
-  background-position: left 71%, 70% 10%;
-}
-.intro-content{
-  height: 500px;
-    margin-top: 130px;
-    padding: 20px 10px;
-    width: 40%;
-}
-.intro-title{
-  font-size: 50px;
-}
-#dBtn{
-  @include button(white,$primaryColor);
-  border: none;
-  margin-right: 12px;
-}
-#lBtn{
-  @include button($primaryColor,white);
-  background-color: white;
-  border: 2px solid #df5d88;
+.intro-section {
+  background-image: url(../assets/hero-area.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 62%;
+  padding: 100px 0px;
+  .intro {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+
+    .intro-content {
+      padding: 20px 10px;
+      width: 50%;
+      .intro-title {
+        font-size: 50px;
+      }
+      #dBtn {
+        @include button(white, $primaryColor);
+        border: none;
+        margin-right: 12px;
+      }
+      #lBtn {
+        @include button($primaryColor, white);
+        background-color: white;
+        border: 2px solid #df5d88;
+      }
+    }
+    .side-img {
+      width: 50%;
+      padding: 20px;
+      text-align: center;
+      img{
+        width: 75%;
+        height: auto;
+      }
+    }
+  }
 }

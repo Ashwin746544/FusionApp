@@ -1,65 +1,68 @@
 @import "../shared";
-footer{
+footer {
   position: relative;
   padding: 15px 0px;
 }
-.f-content{
-  width: 70%;
+.f-content {
+  width: 1200px;
   margin: auto;
   margin-top: 70px;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
 }
-.f-company{
-  width: 70%;
+.f-company {
+  width: 1200px;
   margin: auto;
   text-align: center;
 }
-.f-company span{
+.f-company span {
   color: $primaryColor;
 }
-.fusion,.f-contact,.products,.resources{
+.fusion,
+.f-contact,
+.products,
+.resources {
   flex: 1 0 15%;
 }
-.s-icons img{
+.s-icons img {
   width: 15px;
   margin-right: 30px;
 }
-.s-icons{
+.s-icons {
   margin: 7px 0px;
 }
-.f-contact-info img{
+.f-contact-info img {
   width: 20px;
   padding-top: 15px;
 }
-.f-contact-info{
+.f-contact-info {
   display: flex;
 }
-.f-contact-info div:nth-child(2){
+.f-contact-info div:nth-child(2) {
   padding: 0px 5px;
 }
-.f-content > div{
+.f-content > div {
   padding: 10px;
- }
- .f-content > div h2{
- margin-top: 2px;
- }
-.arrow{
+}
+.f-content > div h2 {
+  margin-top: 2px;
+}
+.arrow {
   border-radius: 50%;
   display: inline;
   box-shadow: $primaryShadow;
   right: 15px;
   bottom: 15px;
-  position: absolute;
+  position: fixed;
 }
-.arrow button{
+.arrow button {
   border-radius: 50%;
   padding: 3px;
   border: none;
   background-color: $primaryColor;
 }
-.arrow button img{
+.arrow button img {
   width: 30px;
   height: 25px;
 }

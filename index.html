@@ -11,28 +11,34 @@
 </head>
 
 <body>
-  <div class="container">
+  < class="container">
     <nav>
-      <img src="./assets/logo.png" alt="Fusion">
-      <ul>
-        <li><a href="#home" id="page-1" >Home</a></li>
+      <div class="nav-logo"><img src="./assets/logo.png" alt="Fusion"></div>
+      <ul class="nav-links">
+        <li><a href="#home" id="page-1">Home</a></li>
         <li><a href="#services" id="page-2">Services</a></li>
-        <li><a href="#team" id="page-3" >Team</a></li>
+        <li><a href="#team" id="page-3">Team</a></li>
         <li><a href="#pricing" id="page-4">Pricing</a></li>
-        <li><a href="#testinomial" id="page-5" >Testimonial</a></li>
-        <li><a href="#contact" id="page-6" >contact</a></li>
+        <li><a href="#testinomial" id="page-5">Testimonial</a></li>
+        <li><a href="#contact" id="page-6">Contact</a></li>
       </ul>
+      <img src="./assets/menu.svg" alt="" class="menuIcon">
     </nav>
-    <div class="intro" id="home">
-      <div class="intro-content">
-        <h1 class="intro-title">App,Business & SaaS Landing Page</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, dicta molestias libero,
-          corporis officia amet dolore, eveniet aspernatur nesciunt natus omnis iure nostrum nam unde dignissimos
-          numquam deserunt inventore ea pariatur corrupti exercitationem cumque nulla porro. Accusantium ad et
-          explicabo!
-        </p>
-        <button id="dBtn">DOWNLOAD NOW</button>
-        <button id="lBtn">LEARN MORE </button>
+    <div class="intro-section" id="home">
+      <div class="intro">
+        <div class="intro-content">
+          <h1 class="intro-title">App,Business & SaaS Landing Page</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, dicta molestias libero,
+            corporis officia amet dolore, eveniet aspernatur nesciunt natus omnis iure nostrum nam unde dignissimos
+            numquam deserunt inventore ea pariatur corrupti exercitationem cumque nulla porro. Accusantium ad et
+            explicabo!
+          </p>
+          <button id="dBtn">DOWNLOAD NOW</button>
+          <button id="lBtn">LEARN MORE </button>
+        </div>
+        <div class="side-img">
+          <img src="./assets/intro-mobile.png" alt="">
+        </div>
       </div>
     </div>
     <div class="services" id="services">
@@ -90,90 +96,105 @@
         </div>
       </div>
     </div>
-    <div class="statistics">
-      <div class="stats-content">
-        <p>Manage statistics</p>
-        <h2>Detailed Statistics For Your Company</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minima sed quis rem quisquam.
-          Error dignissimos eum laudantium odio unde itaque reprehenderit optio commodi impedit natus est
-          repudiandae sequi, tempore animi magnam omnis blanditiis nisi. Eum accusantium ipsum qui quia,
-          minima necessitatibus facere repellat iusto sapiente veniam alias sequi provident.</p>
-        <button class="rBtn">READ MORE</button>
+    <section class="statistics-section">
+      <div class="statistics">
+        <div class="stats-content">
+          <p>Manage statistics</p>
+          <h1>Detailed Statistics For Your Company</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam minima sed quis rem quisquam.
+            Error dignissimos eum laudantium odio unde itaque reprehenderit optio commodi impedit natus est
+            repudiandae sequi, tempore animi magnam omnis blanditiis nisi. Eum accusantium ipsum qui quia,
+            minima necessitatibus facere repellat iusto sapiente veniam alias sequi provident.</p>
+          <button class="rBtn">READ MORE</button>
+        </div>
+        <div class="side-img">
+          <img src="./assets/img-1.png" alt="">
+        </div>
       </div>
-    </div>
-    <div class="features">
+    </section>
+    <section class="features-section">
+      <div class="features">
       <div class="features-title">
         <h1>Aweso<span>me F</span>eatures</h1>
       </div>
       <div class="features-content">
-        <div class="f-item" id="f-1">
-          <div class="f-info">
-            <h2>Bootstrap 4 Based</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
-              tempore
-              alias.</p>
+        <div class="left">
+          <div class="f-item" id="f-1">
+            <div class="f-info">
+              <h2>Bootstrap 4 Based</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
+                tempore
+                alias.</p>
+            </div>
+            <div class="f-img">
+              <img src="./assets/Features/rocket.svg" alt="">
+            </div>
           </div>
-          <div class="f-img">
-            <img src="./assets/services-icon/rocket.svg" alt="">
+          <div class="f-item" id="f-2">
+            <div class="f-info">
+              <h2>Fully Responsive</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
+                tempore
+                alias.</p>
+            </div>
+            <div class="f-img">
+              <img src="./assets/Features/laptop-phone.svg" alt="">
+            </div>
           </div>
-        </div>
-        <div class="f-item" id="f-2">
-          <div class="f-img">
-            <img src="./assets/Features/leaf.svg" alt="">
-          </div>
-          <div class="f-info">
-            <h2>Modern Design</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
-              tempore
-              alias.</p>
-          </div>
-        </div>
-        <div class="f-item" id="f-3">
-          <div class="f-info">
-            <h2>Fully Responsive</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
-              tempore
-              alias.</p>
-          </div>
-          <div class="f-img">
-            <img src="./assets/Features/laptop-phone.svg" alt="">
-          </div>
-        </div>
-        <div class="f-item" id="f-4">
-          <div class="f-img">
-            <img src="./assets/services-icon/layers.svg" alt="">
-          </div>
-          <div class="f-info">
-            <h2>Multi-Purpose Template</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
-              tempore
-              alias.</p>
+          <div class="f-item" id="f-3">
+            <div class="f-info">
+              <h2>HTML5,CSS3 & SAAS</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
+                tempore
+                alias.</p>
+            </div>
+            <div class="f-img">
+              <img src="./assets/Features/cog.svg" alt="">
+            </div>
           </div>
         </div>
-        <div class="f-item" id="f-5">
-          <div class="f-info">
-            <h2>HTML5,CSS3 & SAAS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
-              tempore
-              alias.</p>
-          </div>
-          <div class="f-img">
-            <img src="./assets/services-icon/cog.svg" alt="">
-          </div>
+        <div class="middle">
+          <img src="./assets/features.png" alt="">
         </div>
-        <div class="f-item" id="f-6">
-          <div class="f-img">
-            <img src="./assets/Features/leaf.svg" alt="">
+        <div class="right">
+          <div class="f-item" id="f-4">
+            <div class="f-img">
+              <img src="./assets/Features/leaf.svg" alt="">
+            </div>
+            <div class="f-info">
+              <h2>Modern Design</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
+                tempore
+                alias.</p>
+            </div>
           </div>
-          <div class="f-info">
-            <h2>Working Contact Form</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
-              tempore
-              alias.</p>
+          <div class="f-item" id="f-5">
+            <div class="f-img">
+              <img src="./assets/Features/layers.svg" alt="">
+            </div>
+            <div class="f-info">
+              <h2>Multi-Purpose Template</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
+                tempore
+                alias.</p>
+            </div>
+          </div>
+
+          <div class="f-item" id="f-6">
+            <div class="f-img">
+              <img src="./assets/Features/leaf.svg" alt="">
+            </div>
+            <div class="f-info">
+              <h2>Working Contact Form</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt adipisci facilis deserunt
+                tempore
+                alias.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    </section>
     <div class="team-section" id="team">
       <div class="team">
         <div class="team-title">
@@ -432,7 +453,8 @@
       </div>
 
     </footer>
-  </div>
+    </div>
 </body>
+<script src="./index.js"></script>
 
 </html>

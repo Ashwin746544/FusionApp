@@ -1,5 +1,5 @@
 .price-section {
-  width: 70%;
+  width: 1200px;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -65,13 +65,13 @@
 
 #plan-1 .icon-container, #plan-3 .icon-container {
   background-color: #e0e0e0;
-  padding: 10px;
+  padding: 15px;
   border-radius: 50%;
 }
 
 #plan-2 .icon-container {
   background-color: #f7073f;
-  padding: 10px;
+  padding: 15px;
   border-radius: 50%;
 }
 /*# sourceMappingURL=price.css.map */

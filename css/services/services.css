@@ -1,5 +1,5 @@
 .services {
-  width: 70%;
+  width: 1200px;
   margin: 30px auto;
 }
 
@@ -49,8 +49,12 @@
 
 .s-item .icon-container {
   background-color: white;
-  padding: 10px;
+  padding: 15px;
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 1px solid #8080801f;
+}
+
+.icon-container img {
+  width: 30px;
 }
 /*# sourceMappingURL=services.css.map */

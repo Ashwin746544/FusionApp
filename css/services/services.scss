@@ -1,6 +1,6 @@
 @import "../shared";
 .services{
-  width: 70%;
+  width: 1200px;
   margin: 30px auto;
 }
 .service-title{
@@ -24,5 +24,8 @@
 }
 .s-item .icon-container{
   @include circleIcon(white);
-  border: 1px solid grey;
+  border: 1px solid #8080801f;
+}
+.icon-container img{
+  width: 30px;
 }

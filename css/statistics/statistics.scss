@@ -1,25 +1,37 @@
 @import "../shared";
-.statistics{
-  height: 500px;
-    position: relative;
-    background-image: url(../assets/img-1.png);
-    background-repeat: no-repeat;
-    background-size: 33% 70%;
-    background-color: whitesmoke;
-    background-position: 70% 40%;
-}
-p{
-  @include normal-text;
-}
-.stats-content{
-  width: 30%;
-  padding: 10px 20px;
-  margin: 0px 15%;
-  position: absolute;
-  top: 90px
-}
-.rBtn{
-  @include button(white,$primaryColor);
-  border: none;
-  margin-top: 8px;
+.statistics-section {
+  background-color: whitesmoke;
+  padding: 45px 0px;
+  .statistics {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    // position: relative;
+    .stats-content {
+      width: 50%;
+      padding: 10px 20px;
+      // position: absolute;
+      // top: 90px;
+      p {
+        @include normal-text;
+      }
+      h1{
+        font-size: 2rem;
+      }
+
+      .rBtn {
+        @include button(white, $primaryColor);
+        border: none;
+        margin-top: 30px;
+        padding: 13px 25px;
+      }
+    }
+    .side-img{
+      width: 50%;
+      img{
+
+      }
+    }
+  }
 }

@@ -1,67 +1,81 @@
 .features {
-  width: 70%;
+  width: 1200px;
   margin: 65px auto;
-  background: url(../../assets/features.png) left 50% top 60%/400px 400px no-repeat;
 }
 
-.features-title {
+.features .features-title {
   text-align: center;
 }
 
-.features-title span {
+.features .features-title span {
   border-bottom: 2px solid #ff6883;
 }
 
-.features-title h1 {
+.features .features-title h1 {
   font-size: 2rem;
 }
 
-.features-content {
+.features .features-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.f-item {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
-  padding: 10px;
-  margin: 10px 30px;
+.features .features-content div.left,
+.features .features-content div.middle,
+.features .features-content div.right {
+  width: 33%;
+}
+
+.features .features-content div.left,
+.features .features-content div.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features .features-content div.middle img {
+  width: 100%;
+}
+
+.features .features-content div.left .f-info {
+  text-align: right;
+}
+
+.features .features-content .f-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  margin: 15px 10px;
   -webkit-box-shadow: 2px 0px 6px 2px #0000000d;
           box-shadow: 2px 0px 6px 2px #0000000d;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
 }
 
-.f-item div {
-  width: 80%;
+.features .features-content .f-item div.f-info {
+  width: 75%;
   padding: 5px;
-  display: inline-block;
 }
 
-.f-item .f-img {
-  vertical-align: top;
-  margin-top: 25px;
-  width: 10%;
+.features .features-content .f-item .f-img {
+  width: 25%;
+  text-align: center;
 }
 
-.f-img:nth-child(even) {
-  margin-left: 5px;
-}
-
-.f-img:nth-child(odd) {
-  margin-right: 10px;
-}
-
-.f-img img {
-  width: 30px;
+.features .features-content .f-item .f-img img {
+  margin-top: 40px;
 }
 
 * {
@@ -69,28 +83,38 @@
           box-sizing: border-box;
 }
 
-nav {
-  width: 70%;
-  margin: auto;
+body {
+  margin: 0;
 }
 
-nav img {
+nav {
+  width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+nav .nav-logo {
   width: 150px;
-  padding: 10px;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
-  display: inline-block;
-  float: right;
   padding-top: 5px;
+  -webkit-transition: height 0.5s ease, padding 0.3s ease;
+  transition: height 0.5s ease, padding 0.3s ease;
 }
 
 nav li {
   float: left;
   padding: 10px 18px;
-  font-size: 20px;
+  font-size: 2vmin;
 }
 
 nav a {
@@ -106,32 +130,72 @@ nav a:active {
   color: #f7073f;
 }
 
+.menuIcon {
+  width: 30px;
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    margin: 15px;
+  }
+  .menuIcon {
+    display: block;
+  }
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    top: 50px;
+  }
+  .menu-active {
+    -webkit-box-shadow: 2px 2px 2px 2px lightgray;
+            box-shadow: 2px 2px 2px 2px lightgray;
+    padding: 10px;
+    height: 275px;
+  }
+}
+
 p {
   color: #80808091;
   font-size: 15px;
 }
 
-.intro {
-  width: 85%;
-  margin-left: 15%;
-  background-image: url(../assets/hero-area.svg), url(../assets/intro-mobile.png);
-  background-repeat: no-repeat,no-repeat;
-  background-size: cover,38% 66%;
-  background-position: left 71%, 70% 10%;
+.intro-section {
+  background-image: url(../assets/hero-area.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 62%;
+  padding: 100px 0px;
 }
 
-.intro-content {
-  height: 500px;
-  margin-top: 130px;
+.intro-section .intro {
+  width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro-section .intro .intro-content {
   padding: 20px 10px;
-  width: 40%;
+  width: 50%;
 }
 
-.intro-title {
+.intro-section .intro .intro-content .intro-title {
   font-size: 50px;
 }
 
-#dBtn {
+.intro-section .intro .intro-content #dBtn {
   color: white;
   background-color: #f7073f;
   border-radius: 20px;
@@ -140,7 +204,7 @@ p {
   margin-right: 12px;
 }
 
-#lBtn {
+.intro-section .intro .intro-content #lBtn {
   color: #f7073f;
   background-color: white;
   border-radius: 20px;
@@ -149,8 +213,19 @@ p {
   border: 2px solid #df5d88;
 }
 
+.intro-section .intro .side-img {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-section .intro .side-img img {
+  width: 75%;
+  height: auto;
+}
+
 .price-section {
-  width: 70%;
+  width: 1200px;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -216,18 +291,18 @@ p {
 
 #plan-1 .icon-container, #plan-3 .icon-container {
   background-color: #e0e0e0;
-  padding: 10px;
+  padding: 15px;
   border-radius: 50%;
 }
 
 #plan-2 .icon-container {
   background-color: #f7073f;
-  padding: 10px;
+  padding: 15px;
   border-radius: 50%;
 }
 
 .services {
-  width: 70%;
+  width: 1200px;
   margin: 30px auto;
 }
 
@@ -277,41 +352,57 @@ p {
 
 .s-item .icon-container {
   background-color: white;
-  padding: 10px;
+  padding: 15px;
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 1px solid #8080801f;
 }
 
-.statistics {
-  height: 500px;
-  position: relative;
-  background-image: url(../assets/img-1.png);
-  background-repeat: no-repeat;
-  background-size: 33% 70%;
+.icon-container img {
+  width: 30px;
+}
+
+.statistics-section {
   background-color: whitesmoke;
-  background-position: 70% 40%;
+  padding: 45px 0px;
 }
 
-p {
+.statistics-section .statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1200px;
+  margin: auto;
+}
+
+.statistics-section .statistics .stats-content {
+  width: 50%;
+  padding: 10px 20px;
+}
+
+.statistics-section .statistics .stats-content p {
   color: #80808091;
   font-size: 15px;
 }
 
-.stats-content {
-  width: 30%;
-  padding: 10px 20px;
-  margin: 0px 15%;
-  position: absolute;
-  top: 90px;
+.statistics-section .statistics .stats-content h1 {
+  font-size: 2rem;
 }
 
-.rBtn {
+.statistics-section .statistics .stats-content .rBtn {
   color: white;
   background-color: #f7073f;
   border-radius: 20px;
   padding: 11px;
   border: none;
-  margin-top: 8px;
+  margin-top: 30px;
+  padding: 13px 25px;
+}
+
+.statistics-section .statistics .side-img {
+  width: 50%;
 }
 
 .team-section {
@@ -320,7 +411,7 @@ p {
 }
 
 .team {
-  width: 70%;
+  width: 1200px;
   margin: auto;
 }
 
@@ -401,7 +492,7 @@ p {
 }
 
 .trial {
-  width: 70%;
+  width: 1200px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,7 +539,7 @@ p {
 }
 
 .users {
-  width: 70%;
+  width: 1200px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,7 +609,7 @@ p {
 }
 
 .contact {
-  width: 70%;
+  width: 1200px;
   margin: 35px auto;
 }
 
@@ -607,7 +698,7 @@ footer {
 }
 
 .f-content {
-  width: 70%;
+  width: 1200px;
   margin: auto;
   margin-top: 70px;
   margin-bottom: 50px;
@@ -620,7 +711,7 @@ footer {
 }
 
 .f-company {
-  width: 70%;
+  width: 1200px;
   margin: auto;
   text-align: center;
 }
@@ -629,7 +720,10 @@ footer {
   color: #f7073f;
 }
 
-.fusion, .f-contact, .products, .resources {
+.fusion,
+.f-contact,
+.products,
+.resources {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 15%;
           flex: 1 0 15%;
@@ -674,7 +768,7 @@ footer {
           box-shadow: 2px 0px 6px 2px #0000000d;
   right: 15px;
   bottom: 15px;
-  position: absolute;
+  position: fixed;
 }
 
 .arrow button {

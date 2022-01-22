@@ -4,7 +4,7 @@ footer {
 }
 
 .f-content {
-  width: 70%;
+  width: 1200px;
   margin: auto;
   margin-top: 70px;
   margin-bottom: 50px;
@@ -17,7 +17,7 @@ footer {
 }
 
 .f-company {
-  width: 70%;
+  width: 1200px;
   margin: auto;
   text-align: center;
 }
@@ -26,7 +26,10 @@ footer {
   color: #f7073f;
 }
 
-.fusion, .f-contact, .products, .resources {
+.fusion,
+.f-contact,
+.products,
+.resources {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 15%;
           flex: 1 0 15%;
@@ -71,7 +74,7 @@ footer {
           box-shadow: 2px 0px 6px 2px #0000000d;
   right: 15px;
   bottom: 15px;
-  position: absolute;
+  position: fixed;
 }
 
 .arrow button {
