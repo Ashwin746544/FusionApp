@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+body p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
 .contact-section {
   background-color: whitesmoke;
   padding: 10px 0px;
@@ -37,6 +43,7 @@
 
 .contact-title span {
   border-bottom: 2px solid #ff6883;
+  padding-bottom: 10px;
 }
 
 .contact-title h1 {
@@ -133,6 +140,14 @@ input[type=submit] {
   }
   .email-name input[name="name"] {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

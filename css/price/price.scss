@@ -85,3 +85,11 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .price-section{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

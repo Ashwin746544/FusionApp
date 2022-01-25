@@ -113,3 +113,10 @@
     width: 400px;
   }
 }
+@media screen and (max-width: 400px) {
+  .features{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

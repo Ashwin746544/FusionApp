@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+body p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
 .users-section {
   background-color: #f7073f;
   padding: 20px 0px;
@@ -24,9 +30,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 32%;
-          flex: 0 1 32%;
+  width: 32%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -79,24 +83,37 @@
   .users {
     width: 750px;
   }
+  .user:last-child {
+    display: none;
+  }
+  .user {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .users {
     width: 550px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .user {
-    width: 100%;
   }
 }
 
 @media screen and (max-width: 576px) {
   .users {
     width: 400px;
+  }
+  .user:nth-child(2) {
+    display: none;
+  }
+  .user {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .users {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 /*# sourceMappingURL=users.css.map */

@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+body p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
 .trial-section {
   padding: 10px 0px;
 }
@@ -91,6 +97,14 @@
     position: static;
     -webkit-transform: none;
             transform: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .trial {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 /*# sourceMappingURL=trial.css.map */

@@ -20,10 +20,12 @@ footer {
   color: $primaryColor;
 }
 .fusion,
-.f-contact,
 .products,
 .resources {
   width: 15%;
+}
+.f-contact{
+  width: 20%;
 }
 .s-icons img {
   width: 15px;
@@ -119,5 +121,19 @@ footer {
     margin: 10px 0px;
   }
 }
+}
+@media screen and (max-width: 400px) {
+  .f-content{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (max-width: 400px) {
+    .f-company{
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 }
 

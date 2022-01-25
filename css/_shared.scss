@@ -1,25 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
 $primaryColor: #f7073f;
 $primaryShadow: 2px 0px 6px 2px #0000000d;
 @mixin normal-text {
   color: #80808091;
   font-size: 15px;
 }
+body {
+  p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+  }
+}
 // @mixin  {
 //   color: gray;
 //   font-size: 15px;
 // }
-@mixin button($color,$back-color) {
+@mixin button($color, $back-color) {
   color: $color;
   background-color: $back-color;
   border-radius: 20px;
   padding: 15px 25px;
 }
 @mixin section-title {
-    text-align: center;
-    span{
+  text-align: center;
+  span {
     border-bottom: 2px solid #ff6883;
+    padding-bottom: 10px;
   }
-  h1{
+  h1 {
     font-size: 2rem;
   }
 }

@@ -57,8 +57,6 @@ input[type=submit]{
   .contact{
     // width: 100%;
     width: 992px;
-    // padding-left: 10px;
-    // padding-right: 10px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -98,4 +96,12 @@ input[type=submit]{
     }
   }
 
+}
+
+@media screen and (max-width: 400px) {
+  .contact{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

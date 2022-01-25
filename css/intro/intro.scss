@@ -22,12 +22,14 @@ p {
       #dBtn {
         @include button(white, $primaryColor);
         border: none;
+        margin: 15px 0px;
         margin-right: 12px;
       }
       #lBtn {
         @include button($primaryColor, white);
         background-color: white;
         border: 2px solid #df5d88;
+        margin: 8px 0px;
       }
     }
     .side-img {
@@ -80,6 +82,16 @@ p {
   .intro-section{
   .intro{
     width: 400px;
+    .intro-content .intro-title{
+      font-size: 35px;
+    }
   }
 }
+}
+@media screen and (max-width: 400px) {
+  .intro-section .intro{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

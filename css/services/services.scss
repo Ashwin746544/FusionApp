@@ -67,5 +67,11 @@
       width: 100%;
     }
   }
-
+}
+@media screen and (max-width: 400px) {
+  .services{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

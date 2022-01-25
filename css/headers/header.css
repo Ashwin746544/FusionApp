@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+body p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,7 +36,9 @@ nav ul {
 nav li {
   float: left;
   padding: 10px 18px;
-  font-size: 2vmin;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Rubik";
 }
 
 nav a {
@@ -46,9 +54,21 @@ nav a:active {
   color: #f7073f;
 }
 
+nav .menu, nav .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+nav .menu {
+  display: none;
+}
+
 .menuIcon {
   width: 30px;
-  display: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -61,8 +81,13 @@ nav a:active {
   nav {
     width: 750px;
   }
-  .menuIcon {
-    display: block;
+  nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .nav-links {
     display: -webkit-box;
@@ -96,6 +121,17 @@ nav a:active {
 @media screen and (max-width: 576px) {
   nav {
     width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nav-links {
+    width: calc(100% - 30px);
   }
 }
 /*# sourceMappingURL=header.css.map */

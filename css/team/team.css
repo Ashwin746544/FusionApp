@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+body p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
 .team-section {
   background-color: whitesmoke;
   padding: 50px 0px;
@@ -15,6 +21,7 @@
 
 .team-title span {
   border-bottom: 2px solid #ff6883;
+  padding-bottom: 10px;
 }
 
 .team-title h1 {
@@ -125,6 +132,14 @@
   }
   .i-img img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .team {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 /*# sourceMappingURL=team.css.map */

@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+body p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
 .features {
   width: 1200px;
   margin: 65px auto;
@@ -9,6 +15,7 @@
 
 .features .features-title span {
   border-bottom: 2px solid #ff6883;
+  padding-bottom: 10px;
 }
 
 .features .features-title h1 {
@@ -125,6 +132,14 @@
 @media screen and (max-width: 576px) {
   .features {
     width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .features {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 /*# sourceMappingURL=features.css.map */
