@@ -77,4 +77,54 @@
 .features .features-content .f-item .f-img img {
   margin-top: 40px;
 }
+
+@media screen and (max-width: 1200px) {
+  .features {
+    width: 992px;
+  }
+  .features .features-title {
+    margin: 40px 0px;
+  }
+  .features .features-title span {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .features {
+    width: 750px;
+  }
+  .features .features-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features .features-content div.left,
+  .features .features-content div.middle,
+  .features .features-content div.right {
+    width: 100%;
+  }
+  .features .features-content div.middle {
+    margin-top: 50px;
+  }
+  .features .features-content div.left .f-info, .features .features-content div.right .f-info {
+    width: 85%;
+  }
+  .features .features-content div.left .f-img, .features .features-content div.right .f-img {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .features {
+    width: 400px;
+  }
+}
 /*# sourceMappingURL=features.css.map */

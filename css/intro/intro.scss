@@ -40,4 +40,46 @@ p {
       }
     }
   }
+  @media screen and (max-width: 1200px) {
+    .intro{
+      // width: 100%;
+      width: 992px;
+      // padding-left: 10px;
+      // padding-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .intro-section{
+    background-position: center;
+  .intro{
+    flex-direction: column;
+    width: 750px;
+    .intro-content,.side-img{
+      width: 100%;
+    }
+    .side-img{
+      padding: 0;
+      img{
+        width: 100%;
+      }
+    } 
+  }
+}
+}
+
+@media screen and (max-width: 768px) {
+  .intro-section{
+    .intro{
+      width: 550px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .intro-section{
+  .intro{
+    width: 400px;
+  }
+}
 }

@@ -12,13 +12,13 @@
   justify-content: space-between;
 }
 .plan{
-
-  flex:0 1 30%;
+  width: 30%;
   box-shadow: $primaryShadow;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px 0px;
+  margin: 20px 0px;
 }
 #plan-2{
   box-shadow: 2px 1px 6px 6px #0000000f; 
@@ -38,4 +38,50 @@
 }
 #plan-2 .icon-container{
   @include circleIcon($primaryColor);
+}
+@media screen and (max-width: 1200px) {
+  .price-section{
+    // width: 100%;
+    width: 992px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .price-section{
+    width: 750px;
+  }
+  .price-content{
+    flex-wrap: wrap;
+  }
+  .plan{
+    min-width: 350px;
+  }
+  .price-title{
+    margin: 40px 0px;
+    span{
+      padding-bottom: 20px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .price-section{
+    width: 550px;
+  }
+  .plan{
+    min-width: 250px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .price-section{
+    width: 400px;
+  }
+  .price-content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .plan{
+    // min-width: 300px;
+    width: 100%;
+  }
 }

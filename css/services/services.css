@@ -28,9 +28,7 @@
 
 .service-content .s-item {
   text-align: center;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 30%;
-          flex: 0 1 30%;
+  width: 30%;
   margin: 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,5 +54,47 @@
 
 .icon-container img {
   width: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .services {
+    width: 992px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .services {
+    width: 750px;
+  }
+  .service-content .s-item {
+    width: 48%;
+  }
+  .service-title {
+    margin: 40px 0px;
+  }
+  .service-title span {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services {
+    width: 400px;
+  }
+  .service-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service-content .s-item {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=services.css.map */

@@ -32,7 +32,7 @@
   color: white;
   background-color: #f7073f;
   border-radius: 20px;
-  padding: 11px;
+  padding: 15px 25px;
   border: none;
   margin-top: 30px;
   padding: 13px 25px;
@@ -40,5 +40,40 @@
 
 .statistics-section .statistics .side-img {
   width: 50%;
+}
+
+.statistics-section .statistics .side-img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .statistics-section .statistics {
+    width: 992px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .statistics-section .statistics {
+    width: 750px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .statistics-section .statistics .stats-content, .statistics-section .statistics .side-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .statistics-section .statistics {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .statistics-section .statistics {
+    width: 400px;
+  }
 }
 /*# sourceMappingURL=statistics.css.map */

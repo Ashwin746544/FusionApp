@@ -1,5 +1,4 @@
 footer {
-  position: relative;
   padding: 15px 0px;
 }
 
@@ -30,9 +29,7 @@ footer {
 .f-contact,
 .products,
 .resources {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 15%;
-          flex: 1 0 15%;
+  width: 15%;
 }
 
 .s-icons img {
@@ -87,5 +84,63 @@ footer {
 .arrow button img {
   width: 30px;
   height: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .f-content {
+    width: 992px;
+  }
+  .f-company {
+    width: 992px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .f-content {
+    width: 750px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .f-company {
+    width: 750px;
+  }
+  .fusion,
+  .f-contact,
+  .products,
+  .resources {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 768px) {
+  .f-content {
+    width: 550px;
+  }
+  .f-company {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 576px) {
+  .f-content {
+    width: 400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .f-company {
+    width: 400px;
+  }
+  .fusion,
+  .f-contact,
+  .products,
+  .resources {
+    width: 100%;
+    margin: 10px 0px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

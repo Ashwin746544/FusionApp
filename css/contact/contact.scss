@@ -12,12 +12,15 @@
   justify-content: space-between;
 }
 .contact-form{
-  flex: 0 1 60%;
+  width: 60%;
   padding: 10px;
 }
 .contact-map{
-  flex: 0 1 40%;
+  width: 40%;
   padding: 10px;
+  iframe{
+    width: 100%;
+  }
 }
 .contact-title{
   @include section-title;
@@ -34,7 +37,7 @@
   justify-content: space-between;
 }
 .email-name input{
-  flex:0 1 47%;
+  width:47%;
   padding: 10px;
 }
 .subject input,.message textarea{
@@ -49,4 +52,50 @@
 input[type=submit]{
   @include button(white,$primaryColor);
   border: none;
+}
+@media screen and (max-width: 1200px) {
+  .contact{
+    // width: 100%;
+    width: 992px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contact{
+    width: 750px;
+  }
+  .contact-content{
+    flex-direction: column;
+  }
+  .contact-form,.contact-map{
+      width: 100%;
+  }
+  .contact-title{
+    margin: 40px 0px;
+    span{
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact{
+    width: 550px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact{
+    width: 400px;
+  }
+  .email-name{
+    flex-direction: column;
+    input{
+      width: 100%;
+    }
+    input[name="name"]{
+      margin-bottom: 15px;
+    }
+  }
+
 }

@@ -17,15 +17,15 @@
     justify-content: space-between;
 }
 .instructor{
-  flex: 48%;
+  display: flex;
+  width: 48%;
   box-shadow: $primaryShadow;
   margin-bottom: 30px;
-  flex-grow: 0;
+
 }
 .i-img{
-display: inline-block;
 width: 30%;
-height: 100%;
+// height: 100%; it not worked in nested flexbox
 }
 .i-role{
    @include normal-text;
@@ -35,12 +35,12 @@ height: 100%;
   @include normal-text;
 }
 .i-img img{
+  object-fit: cover;
   width: 100%;
   height: 100%;
   vertical-align: top;
 }
 .i-info{
-  display: inline-block;
   width: 69%;
   vertical-align: top;
   padding: 3px 10px;
@@ -49,4 +49,49 @@ height: 100%;
 .icon img{
   width: 20px;
   margin-right: 7px;
+}
+@media screen and (max-width: 1200px) {
+  .team{
+    // width: 100%;
+    width: 992px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .team{
+    width: 750px;
+  }
+  .team-content{
+    flex-direction: column;
+  }
+  .instructor{
+    width: 100%;
+  }
+  .team-title{
+    margin: 55px 0px;
+    span{
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team{
+    width: 550px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .team{
+    width: 400px;
+  }
+  .instructor{
+    flex-direction: column;
+  }
+  .i-img,.i-info{
+    width: 100%;
+  }
+  .i-img img{
+    width: 100%;
+  }
 }

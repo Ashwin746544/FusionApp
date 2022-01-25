@@ -64,3 +64,52 @@
     }
   }
 }
+@media screen and (max-width: 1200px) {
+  .features{
+    // width: 100%;
+    width: 992px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+    .features-title{
+      margin: 40px 0px;
+      span{
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .features{
+    width: 750px;
+    .features-content{
+      flex-direction: column;
+      div.left,
+      div.middle,
+      div.right {
+        width: 100%;
+      }
+      div.middle{
+        margin-top: 50px;
+      }
+      div.left,div.right{
+        .f-info{
+          width: 85%;
+        }
+        .f-img{
+          width: 15%;
+        }
+      }
+    }
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .features{
+    width: 550px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .features{
+    width: 400px;
+  }
+}

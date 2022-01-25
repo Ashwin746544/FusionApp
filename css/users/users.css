@@ -13,6 +13,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .user {
@@ -66,5 +67,36 @@
 
 #dot-4 {
   background-color: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+  .users {
+    width: 992px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .users {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .users {
+    width: 550px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .users {
+    width: 400px;
+  }
 }
 /*# sourceMappingURL=users.css.map */

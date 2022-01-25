@@ -18,9 +18,7 @@
 }
 
 .trial .disc, .trial .register {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 40%;
-          flex: 0 1 40%;
+  width: 40%;
 }
 
 .disc h1 {
@@ -41,6 +39,58 @@
   color: white;
   background-color: #f7073f;
   border-radius: 20px;
-  padding: 11px;
+  padding: 15px 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .trial {
+    width: 992px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .trial {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .trial {
+    width: 550px;
+  }
+  .trial .disc {
+    width: 60%;
+  }
+  .trial .register {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .trial-section {
+    padding-bottom: 20px;
+  }
+  .trial {
+    width: 400px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .trial .disc {
+    width: 100%;
+  }
+  .trial .register {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .trial .register button {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 /*# sourceMappingURL=trial.css.map */

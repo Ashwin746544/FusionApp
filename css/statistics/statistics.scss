@@ -30,8 +30,36 @@
     .side-img{
       width: 50%;
       img{
-
+         width: 100%;
       }
     }
   }
+  @media screen and (max-width: 1200px) {
+    .statistics{
+      // width: 100%;
+      width: 992px;
+      // padding-left: 10px;
+      // padding-right: 10px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .statistics{
+      width: 750px;
+      flex-direction: column;
+      .stats-content,.side-img{
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .statistics{
+      width: 550px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .statistics{
+      width: 400px;
+    }
+  }
 }
+

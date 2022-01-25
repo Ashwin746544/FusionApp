@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .user{
   display: flex;
@@ -45,4 +46,30 @@
 }
 #dot-4{
   background-color: transparent;
+}
+@media screen and (max-width: 1200px) {
+  .users{
+    width: 992px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .users{
+    width: 750px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .users{
+    width: 550px;
+    flex-direction: column;
+  }
+  .user{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .users{
+    width: 400px;
+  }
 }
