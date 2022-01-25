@@ -488,6 +488,10 @@ body p {
   border-radius: 50%;
 }
 
+.icon-container img {
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 1200px) {
   .price-section {
     width: 992px;
@@ -609,6 +613,7 @@ body p {
 }
 
 .icon-container img {
+  vertical-align: middle;
   width: 30px;
 }
 

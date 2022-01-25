@@ -39,6 +39,9 @@
 #plan-2 .icon-container{
   @include circleIcon($primaryColor);
 }
+.icon-container img{
+  vertical-align: middle;
+}
 @media screen and (max-width: 1200px) {
   .price-section{
     // width: 100%;
